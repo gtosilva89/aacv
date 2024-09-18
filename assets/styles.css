@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin-block-end: 0;
+}
+
+/* styles.css */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    width: 1000px;
+    height: 300px;
+    padding: 10px;
+    background-color: blue;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+    gap: 15px;
+    /* Espaçamento entre as colunas */
+    position: fixed;
+}
+
+.column {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#foto {
+    flex: 1;
+}
+
+#info {
+    flex: 2;
+}
+
+.contato {
+    flex: 2;
+    padding: 50px;
+}
+
+.contato p {
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.imagem {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.nome {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.nome p {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+h6 {
+    font-size: 16px;
+    margin: 5px 0;
+    color: white;
+}
+
+p {
+    margin: 5px 0;
+}
+
+#corpo {
+    width: 1000px;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#conteudo {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #d3d3d3;
+    padding: 50px;
+}
