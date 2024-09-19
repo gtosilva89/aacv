@@ -21,100 +21,225 @@ dd {
     margin-block-end: 0;
 }
 
-/* styles.css */
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
     display: flex;
     justify-content: center;
-    height: 100vh;
+}
+
+#corpo {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #D3D3D3;
 }
 
 #header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #006400;
     width: 1000px;
     height: 300px;
     padding: 10px;
-    background-color: blue;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px; */
-    gap: 15px;
-    /* Espaçamento entre as colunas */
-    position: fixed;
 }
 
-.column {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.colunas {
+    margin: 10px;
+}
+
+.colunas2 {
+    /* margin: 5px 30px; */
 }
 
 #foto {
     flex: 1;
 }
 
-#info {
-    flex: 2;
-}
-
-.contato {
-    flex: 2;
-    padding: 50px;
-}
-
-.contato p {
-    color: white;
-    line-height: 1.5;
-    text-align: justify;
-}
-
-.imagem {
+.fotoperfil {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
 }
 
-.nome {
+#dados {
+    flex: 2;
+    text-align: center;
+}
+
+#dados h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+#dados h2 {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
     text-align: justify;
     line-height: 1.5;
 }
 
-.nome p {
-    margin: 0;
-    font-size: 50px;
-    font-weight: 700;
+#contato {
+    flex: 1;
+    line-height: 1.5;
+    font-size: 20px;
     color: white;
 }
 
-h6 {
-    font-size: 16px;
-    margin: 5px 0;
-    color: white;
-}
-
-p {
-    margin: 5px 0;
-}
-
-#corpo {
-    width: 1000px;
-    background-color: white;
-    position: absolute;
-    top: 300px;
-    margin: 0 auto;
-    z-index: 1;
-}
-
-#conteudo {
+#sobre {
     width: 900px;
-    margin: 0 auto;
-    background-color: #d3d3d3;
-    padding: 50px;
+    margin: auto auto;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border-bottom: 1px solid black
+}
+
+#sobre h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#sobre p {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#exp-est {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0px auto;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+#experiencia {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#estudo {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#experiencia h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 6px;
+}
+
+#estudo h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 6px;
+}
+
+#experiencia h2 {
+    font-size: 20px;
+}
+
+#estudo h2 {
+    font-size: 20px;
+}
+
+#experiencia p {
+    font-size: 20px;
+}
+
+#estudo p {
+    font-size: 20px;
+}
+
+#experiencia ul {
+    list-style-type: none;
+}
+
+#estudo ul {
+    list-style-type: none;
+}
+
+#experiencia ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#estudo ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#hab-idi {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0px auto;
+    height: 400px;
+    background-color: white;
+}
+
+#habilidades {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#habilidades h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 6px;
+}
+
+#idiomas {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#idiomas h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 6px;
+}
+
+#habilidades h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#idiomas h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#habilidades ul {
+    list-style-type: none;
+}
+
+#idiomas ul {
+    list-style-type: none;
+}
+
+#habilidades ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#idiomas ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
 }
