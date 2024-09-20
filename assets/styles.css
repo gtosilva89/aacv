@@ -30,14 +30,14 @@ body {
 #corpo {
     max-width: 1000px;
     width: 100%;
-    background-color: #D3D3D3;
+    background-color: #F7F9F9;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #006400;
+    background-color: #34495E;
     width: 1000px;
     height: 300px;
     padding: 10px;
@@ -45,10 +45,6 @@ body {
 
 .colunas {
     margin: 10px;
-}
-
-.colunas2 {
-    /* margin: 5px 30px; */
 }
 
 #foto {
@@ -69,14 +65,14 @@ body {
 #dados h1 {
     font-size: 50px;
     font-weight: bold;
-    color: white;
+    color: #BDC3C7;
     line-height: 1.5;
     text-align: justify;
 }
 
 #dados h2 {
     font-size: 20px;
-    color: white;
+    color: #BDC3C7;
     margin-top: 10px;
     text-align: justify;
     line-height: 1.5;
@@ -85,8 +81,15 @@ body {
 #contato {
     flex: 1;
     line-height: 1.5;
+    color: #BDC3C7;
+}
+
+#contato p {
     font-size: 20px;
-    color: white;
+}
+
+.span {
+    margin: 5px;
 }
 
 #sobre {
@@ -94,7 +97,7 @@ body {
     margin: auto auto;
     padding: 5px;
     text-align: center;
-    background-color: white;
+    background-color: #ECF0F1;
     border-bottom: 1px solid black
 }
 
@@ -117,7 +120,7 @@ body {
     justify-content: space-between;
     width: 900px;
     margin: 0px auto;
-    background-color: white;
+    background-color: #ECF0F1;
     border-bottom: 1px solid black;
 }
 
@@ -186,8 +189,8 @@ body {
     justify-content: space-between;
     width: 900px;
     margin: 0px auto;
-    height: 400px;
-    background-color: white;
+    height: auto;
+    background-color: #ECF0F1;
 }
 
 #habilidades {
@@ -201,6 +204,15 @@ body {
     margin: 15px 6px;
 }
 
+#habilidades h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+#habilidades p {
+    font-size: 20px;
+}
+
 #idiomas {
     flex: 1;
     margin-right: 20px;
@@ -212,14 +224,13 @@ body {
     margin: 15px 6px;
 }
 
-#habilidades h2 {
+#idiomas h2 {
     font-size: 26px;
     margin-bottom: 15px;
 }
 
-#idiomas h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
+#idiomas p {
+    font-size: 20px;
 }
 
 #habilidades ul {
@@ -242,4 +253,366 @@ body {
     margin-bottom: 10px;
     text-align: justify;
     line-height: 1.5;
+}
+
+@media (max-width: 425px) {
+    body {
+        display: block;
+    }
+
+    #corpo {
+        max-width: 100%;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #header {
+        padding: 5px;
+    }
+
+    #exp-est {
+        padding: 5px;
+    }
+
+    #hab-idi {
+        padding: 5px;
+    }
+
+    .fotoperfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    #dados h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #dados h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #contato {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #sobre {
+        width: 100%;
+        height: 100%;
+    }
+
+    #sobre h2 {
+        font-size: 22px;
+        text-align: center;
+        margin: 5px 5px;
+    }
+
+    #sobre p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #exp-est {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #hab-idi {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #experiencia {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #estudo {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #habilidades {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #idiomas {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #experiencia h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #estudo h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #habilidades h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #idiomas h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #experiencia h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #estudo h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #habilidades h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #idiomas h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #experiencia p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #estudo p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #habilidades ul li {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #idiomas ul li {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #habilidades p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #idiomas p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #habilidades ul li {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #idiomas ul li {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    #corpo {
+        max-width: 100%;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    #header {
+        padding: 5px;
+    }
+
+    #exp-est {
+        padding: 5px;
+    }
+
+    #hab-idi {
+        padding: 5px;
+    }
+
+    .fotoperfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    #dados h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #dados h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #contato {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #sobre {
+        width: 100%;
+        height: 100%;
+    }
+
+    #sobre h2 {
+        font-size: 24px;
+        text-align: center;
+        margin: 5px 5px;
+    }
+
+    #sobre p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #exp-est {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #hab-idi {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    #experiencia {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #estudo {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #habilidades {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #idiomas {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #experiencia h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #estudo h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #habilidades h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #idiomas h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #experiencia h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #estudo h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #habilidades h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #idiomas h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #experiencia p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #estudo p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #habilidades ul li {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #idiomas ul li {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #habilidades p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #idiomas p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #habilidades ul li {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #idiomas ul li {
+        font-size: 16px;
+        text-align: center;
+    }
 }
